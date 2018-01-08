@@ -1,0 +1,54 @@
+.container-inner {
+    left: 0;
+    width: 720px;
+    font-size: 1.0em;
+}
+
+.header {
+    text-align: center;
+}
+
+.accommodationName, .accommodationType, .accommodationComments, .distance {
+    font-size: 0.9em;
+    color: darkgray;
+    padding: 0;
+    margin: 0 0 10px 0;
+    text-align: left;
+}
+
+.accommodationName span, .accommodationType span, .accommodationComments span, .distance span {
+    font-size: 1.0em;
+    color: black;
+}
+
+.accommodationImage img {
+    height: 50%;
+    width: 50%;
+}
+
+.card-heading {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    line-height: 1.0em;
+    /* width: 100%; */
+}
+
+.dayNumberFlyOut {
+    padding: 10px 10px 10px 10px;
+}
+
+.close-window {
+    padding: 5px 10px 5px 10px;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    left: 60px;
+    font-size: 1.5em;
+}
+
+.close-window a {
+    text-decoration: none;
+}
+

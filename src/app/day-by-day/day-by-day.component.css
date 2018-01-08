@@ -1,0 +1,107 @@
+.container-inner {
+    left: 0;
+    width: 70%;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.card {
+    background: rgba(250, 250, 250, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    color: black;
+    border: none;
+}
+
+.no-walking {
+    background: rgba(247, 245, 211, 0.95);
+}
+
+.long-day {
+    background: rgba(241, 225, 221, 0.95);
+}
+
+img.img-fluid {
+    height: 200px;
+    width: 200px;
+}
+
+.card-columns {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; */
+}
+
+.card-columns>div {
+    /* width: 30%; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* flex-basis: auto; */
+}
+
+.card-block {
+    padding-top: 0;
+}
+
+.dayNumberFlyOut {
+    width: 80px;
+    top: -5px;
+    left: -25px;
+}
+
+.distance {
+    position: relative;
+    top: -30px;
+    left: 115px;
+    width: 80px;
+    font-size: 0.9em;
+    color: rgba(141, 138, 138, 0.932);
+}
+
+.date {
+    position: relative;
+    text-align: center;
+    width: 70px;
+    font-size: 0.8rem;
+    background: rgba(204, 202, 202, 0.562);
+    top: -49px;
+    right: -265px;
+    border-radius: 5px 10px 0px 5px;
+}
+
+.date-dayOfWeek {
+    font-size: 0.8em;
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+    border-radius: 5px 10px 0 0;
+}
+
+.date-day {
+    font-size: 1.5em;
+    font-weight: bold;
+    background: rgb(255, 255, 255, 1);
+    line-height: 0.8;
+    
+}
+
+.date-month {
+    font-size: 0.8em;
+    font-weight: bold;
+    /* color: orange; */
+    color: darkgray;
+}
+
+.full-details {
+    text-align: right;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.full-details a {
+    color: black;
+}

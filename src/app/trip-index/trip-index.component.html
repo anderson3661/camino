@@ -1,0 +1,19 @@
+<div class="container">
+    <!-- <img src="http://img.usabilitypost.com.s3.amazonaws.com/1104/css_slideout/feedback.png" alt="Itinerary" /> -->
+    <img class="distance-marker" src="../../assets/marker.png">
+    Itinerary
+    <div class="container-inner">
+        <header>
+            <div class="dayNumber">Day</div>
+            <div class="summary">Destination</div>
+        </header>
+        <ng-container *ngFor="let caminoDay of dataService.caminoStats; let i = index">
+            <div class="card-divider">
+                <a routerLink="/stats-card/{{ i + 1 }}" routerLinkActive="on" [routerLinkActiveOptions]="{ __change_detection_hack__: [i] }">
+                    <div class="dayNumber">{{ caminoDay.day }}</div>
+                    <div class="summary">{{ caminoDay.daySummary }}</div>
+                </a>
+            </div>
+        </ng-container>
+    </div>
+</div>

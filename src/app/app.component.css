@@ -1,0 +1,124 @@
+#cover {
+    background: #222 url('../assets/IMG_2681.jpg') center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#cover-caption {
+    width: 100%;
+}
+
+.container.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 65%;
+    margin: 0 auto;
+    background-color: rgb(59, 59, 59);
+    /* background-color: rgba(245, 183, 16, 0.5); */
+    z-index: 999;
+    border-radius: 10px;
+}
+
+h1.display-main-header {
+    font: bold 2.5em Arial;
+    text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c5c5c5,
+        0 3px 0 #bbb,
+        0 4px 0 #b5b5b5,
+        0 5px 0 #aaa,
+        0 6px 0 #a5a5a5,
+        0 7px 3px rgba(0, 0, 0, 0.3),
+        0 10px 10px rgba(0, 0, 0, 0.2),
+        0 10px 20px rgba(0, 0, 0, 0.15),
+        0 20px 20px rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font: 0.9em arial;
+    padding: 20px;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+nav a:after {
+    content: "/";
+    padding-left: 40px;
+    color: #ccc;
+}
+
+nav li:last-child a:after {
+    content: "";
+}
+
+.background-image1 {
+    background: #222 url('../assets/IMG_3181.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    /* opacity: 0.3; */
+}
+
+.yellowArrow {
+    position: fixed;
+    left: 0;
+    width: 200px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    z-index: 1;
+}
+
+.shell {
+    position: fixed;
+    top: 10px;
+    width: 100px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    z-index: 1;
+}
+
+.shell.home { left: 50px; }
+.shell.contact { right: 50px; }
+.day-by-day-container .yellowArrow { top: 180px; }
+.accommodation-container .yellowArrow { top: 350px; }
+.distances-walked-container .yellowArrow { top: 520px; }
+.photo-gallery-container .yellowArrow { top: 690px; }
+
+.yellowArrow:hover { left: 25px; }
+.shell.home:hover { left: 75px; }
+.shell.contact:hover { right: 75px; }
+
+/* .day-by-day-container span, .accommodation-container span, .distances-walked-container span, .photo-gallery-container span {
+    position: fixed;
+    font: 1.0em Cambria;
+    font-weight: bold;
+    color: black;
+    z-index: 2;
+}
+
+.day-by-day-container span { top: 227px; left: 98px; }
+.accommodation-container span { top: 397px; left: 60px; }
+.distances-walked-container span { top: 567px; left: 50px; }
+.photo-gallery-container span { top: 738px; left: 79px; } */
+

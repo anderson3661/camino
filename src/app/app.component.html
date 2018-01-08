@@ -1,20 +1,73 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<section id="cover">
+    <div id="cover-caption">
+        <div class="container main-header">
+            <div class="col-sm-10 col-sm-offset-1"></div>
+            <h1 class="display-main-header">Martin and Andrea's Camino de Santiago</h1>
+            <p>24th May 2016 to 8th July 2016</p>
 
+            <!-- <nav class="individual-sport" id="football">
+                <div class="main-header">
+                    <ul>
+                    <li><a routerLink="/accommodation">Accommodation</a></li>
+                    <li><a routerLink="/distances-walked">Distances Walked</a></li>
+                    <li><a routerLink="/day-by-day">Day By Day</a></li>       
+                    <li><a routerLink="/photo-gallery">Photo Gallery</a></li>
+                    <li><a routerLink="/man-walking">Man Walking</a></li>
+                    </ul>
+                </div>
+            </nav> -->
+        </div>
+
+        <div class="home-container">
+            <a routerLink="">
+                <img class="shell home" src="../../assets/shell-home.png">
+            </a>
+        </div>
+
+        <div class="contact-container">
+            <a routerLink="/contact">
+                <img class="shell contact" src="../../assets/shell-contact.png">
+            </a>
+        </div>
+    
+        <div class="day-by-day-container">
+            <a routerLink="/day-by-day">
+                <img class="yellowArrow" src="../../assets/yellowarrow-day-to-day.png">
+                <!-- <span>Day by Day</span> -->
+            </a>
+        </div>
+
+        <div class="accommodation-container">
+            <a routerLink="/accommodation">
+                <img class="yellowArrow" src="../../assets/yellowarrow-accommodation.png">
+            </a>
+        </div>
+    
+        <div class="distances-walked-container">
+            <a routerLink="/distances-walked">
+                <img class="yellowArrow" src="../../assets/yellowarrow-distances-walked.png">
+            </a>
+        </div>
+    
+        <div class="photo-gallery-container">
+            <a routerLink="/photo-gallery">
+                <img class="yellowArrow" src="../../assets/yellowarrow-photo-gallery.png">
+            </a>
+        </div>
+    
+        <trip-index></trip-index>
+        <router-outlet (activate)="scrollToTop()"></router-outlet>
+        
+    </div>
+   
+</section>
+
+    <div class="background-image1"></div>
+    <!-- <img src="../../assets/IMG_3181.JPG"> -->
+    <img src="../../assets/IMG_2975.JPG">
+    <img src="../../assets/IMG_2915.JPG">
+    <img src="../../assets/IMG_2645.JPG">
+    <img src="../../assets/IMG_2636.JPG">
+    <img src="../../assets/IMG_0281.JPG">
+    <img src="../../assets/IMG_0287.JPG">
+    <img src="../../assets/IMG_2585.JPG">

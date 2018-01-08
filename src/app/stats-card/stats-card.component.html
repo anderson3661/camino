@@ -1,0 +1,61 @@
+<!-- <mat-card class="stats-card">
+  <mat-card-header>
+    <div mat-card-avatar class="stats-header-image"></div>
+    <mat-card-title id="card-title">Day: {{ dataService.caminoStats[0].day }}</mat-card-title>
+    <mat-card-subtitle>{{ dataService.caminoStats[0].daySummary }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="../assets/IMG_2975.JPG" alt="Martin at O'Cebreiro"> -->
+<!-- <mat-card-content> -->
+<!-- <p> {{ dataService.caminoStats[0].blog }} </p> -->
+<!-- </mat-card-content> -->
+<!-- <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions> -->
+<!-- </mat-card> -->
+
+<div class="container-inner">
+    <div class="dayNumberFlyOut">Day: {{ stats.day }}</div>
+    <table class="header">
+        <tr>
+            <td class="distanceMarker"><img src="../../assets/marker.png"></td>
+            <!-- <td class="spacer">&nbsp;</td> -->
+            <td class="zombie" id="zombie5">&nbsp;</td>
+            <td class="distanceMarker"><img src="../../assets/marker.png"></td>
+        </tr>
+        <tr>
+            <td class="townName">{{ statsPrevious.daySummary }}</td>
+            <td class="distance">
+                <img class="yellowArrow" src="../../assets/yellowarrow.png">
+                <img class="yellowArrow" src="../../assets/yellowarrow.png">
+                <img class="yellowArrow" src="../../assets/yellowarrow.png">
+                <span class="amount" *ngIf="stats.distance > 0">{{ stats.distance }} km</span>
+                <img class="yellowArrow" src="../../assets/yellowarrow.png">
+                <img class="yellowArrow" src="../../assets/yellowarrow.png">
+                <img class="yellowArrow" src="../../assets/yellowarrow.png">
+            </td>
+            <td class="townName">{{ stats.daySummary }}</td>
+        </tr>
+    </table>
+    <!-- <div class="summary">
+        <img class="marker" src="../../assets/marker.png"> {{ stats.daySummary }}
+        <img class="yellowarrow" src="../../assets/yellowarrow.png">
+        <img class="yellowarrow" src="../../assets/yellowarrow.png">
+        <img class="yellowarrow" src="../../assets/yellowarrow.png">
+        <img class="yellowarrow" src="../../assets/yellowarrow.png">
+        <img class="marker" src="../../assets/marker.png">
+    </div>
+    <p class="distance" *ngIf="stats.distance > 0">Distance walked: {{ stats.distance }} km </p> -->
+    <br>
+    <p class="blog">{{ stats.blog }} </p>
+    <!-- <p class="accommodationName">Accommodation:
+        <a target="blank" href="{{ stats.accommodationURL }}">{{ stats.accommodationName }}</a>
+    </p> -->
+    <p class="youtube">
+        <!-- <iframe src="https://www.youtube.com/embed/cM19LzLAoZM" frameborder="1" gesture="media" allow="encrypted-media" allowfullscreen></iframe> -->
+        <!-- <iframe src="{{ youtubeVideo }})" frameborder="1" gesture="media" allow="encrypted-media" allowfullscreen></iframe> -->
+        <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(this.stats.youtubeURL)' frameborder="1" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    </p>
+    <p class="accommodation"><a routerLink="/accommodation-card/{{ stats.day }}">Accommodation</a></p>
+
+</div>

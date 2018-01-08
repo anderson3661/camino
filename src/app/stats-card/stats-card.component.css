@@ -1,0 +1,82 @@
+.container-inner {
+    left: 0;
+    width: 720px;
+    font-size: 1.0em;
+    padding: 15px 10px;
+}
+
+.dayNumberFlyOut {
+    left: -20px;
+}
+
+.summary, .distance, .blog, .accommodation, .youtube {
+    padding: 0 30px;
+}
+
+table.header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+td.distanceMarker {
+    width: 25%;
+    text-align: center;
+    padding: 0;
+}
+
+td.spacer {
+    width: 50%;
+    padding: 0;
+}
+
+.distanceMarker img {
+    height: 50%;
+    width: 50%;
+}
+
+.townName {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;    
+}
+
+img.yellowArrow {
+    height: 9%;
+    width: 9%;
+}
+
+.distance {
+    text-align: center;    
+}
+    
+.distance .amount {
+    font-size: 1.2em;    
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+.youtube iframe {
+    width: 640px;
+    height: 360px;
+}
+
+/* .zombie {
+    position:absolute;
+    background-image:url('../../assets/zombify.png');
+    border: 1px solid white;
+    height:190px;
+    top:400px;
+    width:250px;
+} */
+
+#zombie5 {
+	position: absolute;
+	background-image: url('../../assets/zombify.png');
+	width: 250px;
+	height: 190px;
+	top: 25px;
+    left: 75px;
+    border: none;
+}
+
+

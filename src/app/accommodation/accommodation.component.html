@@ -1,0 +1,23 @@
+<div class="container-inner">
+    <p class="heading">Accommodation Summary</p>
+    <table>
+        <thead>
+            <tr>
+                <th class="dayNumber">Day</th>
+                <th class="destination">Destination</th>
+                <th class="type">Type</th>
+                <th class="name">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let caminoDay of dataService.caminoStats">
+                <!-- <a routerLink="/accommodation-card/{{ caminoDay.day }}"> -->
+                    <td class="dayNumber">{{ caminoDay.day }}</td>
+                    <td><a routerLink="/accommodation-card/{{ caminoDay.day }}">{{ caminoDay.daySummary }}</a></td>
+                    <td>{{ caminoDay.accommodationType }}</td>
+                    <td>{{ caminoDay.accommodationName }}</td>
+                <!-- </a> -->
+            </tr>
+        </tbody>
+    </table>
+</div>

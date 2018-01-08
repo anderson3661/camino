@@ -1,0 +1,36 @@
+<div class="container-inner">
+
+    <div class="card-heading">
+        <div class="dayNumberFlyOut">Day: {{ stats.day }}</div>
+        <div class="close-window">
+            <a routerLink="/accommodation">X</a>
+        </div>
+    </div>
+
+    <h3 class="header">Accommodation -
+        <span>{{ stats.daySummary}}</span>
+    </h3>
+
+    <p class="distance" *ngIf="stats.distance > 0"></p>
+
+    <p class="accommodationType">Type:
+        <span>{{ stats.accommodationType }}</span>
+    </p>
+
+    <p class="accommodationComments">Comments:
+        <span>{{ stats.accommodationComments }}</span>
+    </p>
+
+    <p>
+        <img class="accommodationImage" src="../../assets/accommodation/{{ stats.day + '-' + stats.accommodationName + '.jpg'}}">
+    </p>
+
+    <p class="accommodationName">Website:
+        <a target="blank" href="{{ stats.accommodationURL }}">{{ stats.accommodationName }}</a>
+    </p>
+
+    <p class="distance">Distance walked that day:
+        <span>{{ stats.distance + ' km' }}</span>
+    </p>
+
+</div>

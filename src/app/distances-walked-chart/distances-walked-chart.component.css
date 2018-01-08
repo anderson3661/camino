@@ -1,0 +1,7 @@
+.container-inner-chart {
+    padding: 15px;
+    background: rgba(250, 250, 250, 0.95);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 1;
+}

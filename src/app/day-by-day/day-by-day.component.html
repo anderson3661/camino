@@ -1,0 +1,112 @@
+<div class="container-inner">
+    <!-- <h3>Day by Day Details</h3> -->
+    <!-- <div class="lead">Here are the day by day details of our epic journey.</div> -->
+    <!-- <hr> -->
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div class="card-columns">
+                <ng-container *ngFor="let stats of dataService.caminoStats; let i = index">
+                    <div class="card" [class.no-walking]="stats.distance === 0" [class.long-day]="stats.distance >= 25">
+                        <div class="card-block">
+                            <div class="dayNumberFlyOut">Day: {{ i + 1 }}</div>
+                            <div class="distance">{{ (stats.distance > 0) ? stats.distance + 'km' : '&nbsp;' }}</div>
+                            <div class="date">
+                                <div class="date-dayOfWeek">{{ getDate(i).dayOfWeek }}</div>
+                                <div class="date-day">{{ getDate(i).day }}</div>
+                                <div class="date-month">{{ getDate(i).month }}</div>
+                            </div>
+                            <h4 class="card-title">{{ stats.daySummary }}</h4>
+                            <!-- <img class="card-img-top img-fluid" src="../assets/IMG_0265_tn.jpg" alt="Woman with a camera"> -->
+                            <p class="card-text text-left">{{ stats.blog }}</p>
+                            <p class="full-details">
+                                <a routerLink="/stats-card/{{ i }}">More ...</a>
+                            </p>
+                        </div>
+                    </div>
+                </ng-container>
+                <!-- <div class="card p-3">
+                            <blockquote class="card-block card-blockquote">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <small class="text-muted">
+                                    Someone famous in
+                                    <cite title="Source Title">Source Title</cite>
+                                </small>
+                            </blockquote>
+                        </div> -->
+                <!-- <div class="card"> -->
+                <!-- <img class="card-img-top img-fluid" src="img/chalkboard2.jpeg" alt="Picture of a chalkboard"> -->
+                <!-- <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                <p class="card-text">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card card-inverse card-primary p-3 text-center">
+                            <blockquote class="card-blockquote">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                                <small>
+                                    Someone famous in
+                                    <cite title="Source Title">Source Title</cite>
+                                </small>
+                            </blockquote>
+                        </div>
+                        <div class="card text-center">
+                            <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                <p class="card-text">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div> -->
+                <!-- <div class="card"> -->
+                <!-- <img class="card-img img-fluid" src="../assets/IMG_2585_tn.jpg" alt="With a computer"> -->
+                <!-- </div>
+                        <div class="card p-3 text-right card-warning card-inverse">
+                            <blockquote class="card-blockquote">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <small class="text-muted">
+                                    Someone famous in
+                                    <cite title="Source Title">Source Title2</cite>
+                                </small>
+                            </blockquote>
+                        </div>
+                        <div class="card">
+                            <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+                                    This card has even longer content than the first to show that equal height action.</p>
+                                <p class="card-text">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                <!-- <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#">Previous</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav> -->
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="distance-walked">
+    <div class="container-inner-distance">
+        <p class="heading">Distances Walked</p>
+        <table>
+            <thead>
+                <tr>
+                    <th class="dayNumber">Day</th>
+                    <th class="destination">Destination</th>
+                    <th class="distance-amount">Distance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let caminoDay of dataService.caminoStats">
+                    <td class="dayNumber">{{ caminoDay.day }}</td>
+                    <td>{{ caminoDay.daySummary }}</td>
+                    <td class="distance-amount" [class.notApplicable]="caminoDay.distance === 0" [class.longDay]="caminoDay.distance >= 25">{{ caminoDay.distance > 0 ? (caminoDay.distance | number:'1.1-1') + ' km' : 'N/A' }}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="distance-total">Total</td>
+                    <td class="distance-total amount">{{ totalWalked | number:'1.1-1' }} km</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="distance-total-miles">=</td>
+                    <td class="distance-total-miles-amount">{{ totalWalkedMiles | number:'1.1-1' }} miles</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div>
+        <distances-walked-chart></distances-walked-chart>
+    </div>
+
+</div>

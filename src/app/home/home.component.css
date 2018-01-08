@@ -1,0 +1,15 @@
+.container-inner {
+    top: 200px;
+    left: 0;
+    width: 700px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    padding: 5px 10px;
+}

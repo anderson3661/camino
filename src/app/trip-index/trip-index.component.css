@@ -1,0 +1,70 @@
+.container, .container-inner {
+    position: fixed;
+    padding: 10px;
+    color: black;
+    background: rgba(250, 250, 250, 0.9);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;   
+
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+}
+
+.container {
+    font: 1.2rem Cambria;
+    font-weight: bold;
+    top: 300px;
+    right: 0;
+    width: 125px;
+    z-index: 9;
+}
+
+.container-inner {
+    font: 0.9rem Cambria;
+    top: 150px;
+    right: -300px;
+    width: 300px;
+}
+
+.container:hover {
+    right: -300px;
+}
+
+.container:hover .container-inner {
+    right: 0;
+}
+
+header {
+    display: flex;
+    background-color: #ccc;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+
+.card-divider {
+    display: flex;
+    text-align: left;
+    align-items: left;
+}
+
+.card-divider > a {
+    display: flex;
+    color: black;
+}
+
+.dayNumber {
+    flex: 0 0 40px;
+    text-align: center;
+}
+
+.summary {
+    flex: 0 0 250px;
+    text-align: left;
+}
+
+.card-divider:hover {background: #CCC}

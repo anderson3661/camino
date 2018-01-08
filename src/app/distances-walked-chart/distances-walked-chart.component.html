@@ -1,0 +1,14 @@
+<div class="container-inner-chart">
+    <div style="display: block">
+        <canvas height="450px;" baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [colors]="barChartColors"
+            [chartType]="barChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+    </div>
+    <!-- <button (click)="randomize()">Update</button> -->
+</div>

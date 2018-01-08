@@ -1,0 +1,11 @@
+<!-- <section class="image-gallery"> -->
+<section class="container-inner">
+    <!-- <div class="container"> -->
+        <ul>
+            <li *ngFor="let image of images; let i = index">
+                <img [id]="'image' + (i + 1)" class="{{ image.rotate }}" [class.thumbnail]="image.isThumbnail" [class.largerImage]="!image.isThumbnail" src="../assets/IMG_{{ image.src }}_tn.jpg" alt="{{ image.alt }}" (click)="imageClick(i + 1)">
+                <img *ngIf="image.isLargerImage" class="thumbnail" src="../assets/IMG_{{ image.src }}_tn.jpg">
+            </li>
+        </ul>
+    <!-- </div> -->
+</section>
